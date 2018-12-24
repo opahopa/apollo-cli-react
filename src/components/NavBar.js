@@ -55,8 +55,8 @@ class AppNavBar extends React.Component {
                     <Toolbar>
                         <Query query={GET_USERNAME_INPUT}>
                             {({ data, client }) => (
-                                <Typography variant="h6" color="inherit" className={classes.grow} data-testid="username-value">
-                                    <div id="username-value-id">Username: {data? data.username : '*enter username*'}</div>
+                                <Typography variant="h6" color="inherit" className={classes.grow} data-testid="value-username">
+                                    <div id="value-username-id">Username: {data? data.username : '*enter username*'}</div>
                                 </Typography>
                             )}
                         </Query>

@@ -93,7 +93,7 @@ class SignInPage extends React.Component {
                                     <InputLabel htmlFor="email">Username</InputLabel>
                                     <Input id="username" name="username"
                                            autoComplete="email"
-                                           data-testid="username-input"
+                                           data-testid="input-username"
                                            value={this.state.inputUsername}
                                            onChange={evt => this.updateInputUsername(evt)}
                                            autoFocus/>

@@ -15,12 +15,6 @@ describe('App', () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('renders default username', () => {
-        const {getByTestId} = render(<App/>);
-        const defaultUsername = getByTestId("username-value");
-        expect(defaultUsername).toHaveTextContent('default');
-    });
-
 
     it('updates default username on for submit click', async () => {
         const username = 'hello';
@@ -35,7 +29,7 @@ describe('App', () => {
 
         component.find('button#btn-submit').simulate('click');
         setTimeout(()=>{
-            const usernameValue = component.find('#username-value-id');
+            const usernameValue = component.find('#value-username-id');
             expect(usernameValue).toHaveTextContent(username);
         },1);
     });

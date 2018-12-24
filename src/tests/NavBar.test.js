@@ -24,6 +24,6 @@ it('renders without error', () => {
 
 it('renders default username', () => {
     const {getByTestId} = render(<App/>);
-    const defaultUsername = getByTestId("username-value");
+    const defaultUsername = getByTestId("value-username");
     expect(defaultUsername).toHaveTextContent('default');
 });

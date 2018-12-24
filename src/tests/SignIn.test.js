@@ -21,7 +21,7 @@ describe('SignIn', () => {
 
     it('renders username input', () => {
         const {getByTestId} = setup();
-        const usernameInput = getByTestId("username-input");
+        const usernameInput = getByTestId("input-username");
         expect(usernameInput).toBeInTheDocument();
     });
 
