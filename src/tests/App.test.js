@@ -6,7 +6,8 @@ import { mount } from 'enzyme';
 
 
 //FIXME: 'updates default username on for submit click' test works only with enzyme.
-//username value is not updated using `react-testing-library`.
+//TODO: figure out why username unput change event doesn't get fired with 'react-testing-library'
+// (related to use of react material)
 describe('App', () => {
 
     it('renders without crashing', () => {

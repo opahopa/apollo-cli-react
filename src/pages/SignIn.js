@@ -55,7 +55,7 @@ class SignInPage extends React.Component {
     }
 
     validateUsername(evt) {
-        if (evt.target.value.length > 50) {
+        if (evt.target.value.length > 30) {
             this.state.errorMessage = 'Error: maxLength';
             return false;
         }
@@ -115,7 +115,7 @@ class SignInPage extends React.Component {
                                 >
                                     Submit
                                 </Button>
-                                {this.state.errorMessage? this.state.errorMessage: ''}
+                                <div id="form-error-msg">{this.state.errorMessage? this.state.errorMessage: ''}</div>
                             </form>
                         )}
                     </ApolloConsumer>
