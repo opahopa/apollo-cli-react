@@ -42,6 +42,7 @@ const styles = theme => ({
     },
 });
 
+//TODO: Make a proper form validation. Current impl is a kind of 'mockup'.
 class SignInPage extends React.Component {
 
     constructor(props) {
